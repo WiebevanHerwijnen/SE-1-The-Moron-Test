@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpriteChange : MonoBehaviour {
     public Sprite BlueButton;
@@ -16,7 +17,9 @@ public class SpriteChange : MonoBehaviour {
 	void Start () {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         GBool = true;
-        
+
+        // Sets Main scene
+        SceneManager.LoadScene("Main", LoadSceneMode.Additive);
         }
 
     // Update is called once per frame
@@ -54,7 +57,7 @@ public class SpriteChange : MonoBehaviour {
         if (CountMouse1 == 10)
         {
             
-            
+            // Set counter for Orange Button; Reset Mouse Counter
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 CountMouse0 = 9000;
@@ -66,6 +69,15 @@ public class SpriteChange : MonoBehaviour {
         {
             CountMouse1 = 0;
         }
+
+        // Switch Scenes as Orange Button appears
+        if (gameObject.GetComponent<SpriteRenderer>().sprite = OrangeButton)
+        {
+            Debug.Log("That's Indeed Orange"); // Print so OrangeButton can be seen in Console
+
+
+        }
+
     }
 
 }

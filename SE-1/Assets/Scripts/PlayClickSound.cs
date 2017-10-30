@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayClickSound : MonoBehaviour {
 
-    public AudioClip gneurshk;
+    public AudioClip Gneurshk;
 
 	// Use this for initialization
 	void Start () {
 
-        this.gameObject.AddComponent<AudioSource>();
-        this.GetComponent<AudioSource>().clip = gneurshk;
+        gameObject.AddComponent<AudioSource>();
+        GetComponent<AudioSource>().clip = Gneurshk;
         //GetComponent<AudioSource>().Play;
 	}
 	
