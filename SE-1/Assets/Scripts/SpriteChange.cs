@@ -19,7 +19,7 @@ public class SpriteChange : MonoBehaviour {
         GBool = true;
 
         // Sets Main scene
-        SceneManager.LoadScene("Main", LoadSceneMode.Additive);
+       // SceneManager.LoadScene("Main", LoadSceneMode.Additive);
         }
 
     // Update is called once per frame
