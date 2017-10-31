@@ -12,8 +12,10 @@ public class SpriteChange : MonoBehaviour {
     private bool GBool;
     public int CountMouse1 = 0;
     public int CountMouse0 = 0;
-	// Use this for initialization
-	void Start () {
+    public AudioSource GSound;
+    public AudioSource SecretSound;
+    // Use this for initialization
+    void Start () {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         GBool = true;
 
@@ -60,6 +62,8 @@ public class SpriteChange : MonoBehaviour {
                 CountMouse0 = 9000;
                 gameObject.GetComponent<SpriteRenderer>().sprite = OrangeButton;
                 CountMouse1 = 0;
+                SecretSound.Play();
+       
             } 
         }
         if (CountMouse1 == 11)
@@ -78,6 +82,7 @@ public class SpriteChange : MonoBehaviour {
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         }
+       
 
         // Sets Main scene
         // SceneManager.LoadScene("Main", LoadSceneMode.Additive);

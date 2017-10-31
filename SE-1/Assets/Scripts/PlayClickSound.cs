@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PlayClickSound : MonoBehaviour {
 
-    public AudioClip Gneurshk;
+    public AudioSource GSound;
+    
 
-	// Use this for initialization
-	void Start () {
-
-        gameObject.AddComponent<AudioSource>();
-        GetComponent<AudioSource>().clip = Gneurshk;
-        //GetComponent<AudioSource>().Play;
-	}
-	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            GSound.Play();   
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            GSound.Play();
+        }
+        
+    }
 }
