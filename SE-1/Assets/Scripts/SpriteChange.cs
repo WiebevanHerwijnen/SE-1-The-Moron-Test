@@ -18,8 +18,7 @@ public class SpriteChange : MonoBehaviour {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         GBool = true;
 
-        // Sets Main scene
-       // SceneManager.LoadScene("Main", LoadSceneMode.Additive);
+
         }
 
     // Update is called once per frame
@@ -77,6 +76,9 @@ public class SpriteChange : MonoBehaviour {
 
 
         }
+
+        // Sets Main scene
+        // SceneManager.LoadScene("Main", LoadSceneMode.Additive);
 
     }
 
