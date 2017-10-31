@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SpriteChange : MonoBehaviour {
+
     public Sprite BlueButton;
     public Sprite RedButton;
     public Sprite GreenButton;
