@@ -10,7 +10,6 @@ public class SpriteChange : MonoBehaviour {
     public Sprite PurpleButton;
     public Sprite OrangeButton;
     private bool GBool;
-    private bool RBool;
     public int CountMouse1 = 0;
     public int CountMouse0 = 0;
 	// Use this for initialization
@@ -47,7 +46,6 @@ public class SpriteChange : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = PurpleButton;
-                RBool = false;
                 CountMouse1++;
             }
         
