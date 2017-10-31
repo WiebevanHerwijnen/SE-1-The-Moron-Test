@@ -26,7 +26,7 @@ public class SpriteChange : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse1)) { 
         
          gameObject.GetComponent<SpriteRenderer>().sprite = RedButton;
-            CountMouse1++;
+         
             
         }
 
