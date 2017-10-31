@@ -70,9 +70,9 @@ public class SpriteChange : MonoBehaviour {
             CountMouse1 = 0;
         }
 
-        // Switch Scenes as Orange Button appears
-        if (gameObject.GetComponent<SpriteRenderer>().sprite = OrangeButton)
-        {
+         //Switch Scenes as Orange Button appears
+       if (CountMouse0 == 9000)
+       {
             Debug.Log("That's Indeed Orange"); // Print so OrangeButton can be seen in Console
 
 
