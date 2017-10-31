@@ -74,6 +74,10 @@ public class SpriteChange : MonoBehaviour {
 
 
         }
+       if (CountMouse1 == 1)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+        }
 
         // Sets Main scene
         // SceneManager.LoadScene("Main", LoadSceneMode.Additive);
