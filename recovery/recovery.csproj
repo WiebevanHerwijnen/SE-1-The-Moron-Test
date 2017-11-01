@@ -78,6 +78,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ResetMoronTest.cs" />
+    <Compile Include="Assets\Scripts\SM_Button_FM.cs" />
     <Compile Include="Assets\Scripts\SM_OS_S1.cs" />
     <Compile Include="Assets\Scripts\SpriteChange.cs" />
   </ItemGroup>
