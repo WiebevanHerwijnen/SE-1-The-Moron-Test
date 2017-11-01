@@ -14,7 +14,6 @@ public class SpriteChange : MonoBehaviour {
     public Sprite Fail;
     private bool GBool;
     public bool B;
-    public bool Text;
     public int CountMouse1 = 0;
     public int CountMouse0 = 0;
     public int OBCount = 0;
@@ -32,7 +31,6 @@ public class SpriteChange : MonoBehaviour {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         GBool = true;
         B = false;
-        Text = false;
 
         }
 
@@ -105,7 +103,6 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
                  gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
-                    Text = true;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
@@ -134,7 +131,6 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
-                    Text = true;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -163,7 +159,6 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
-                    Text = true;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -191,7 +186,6 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha4))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
-                    Text = true;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -220,7 +214,6 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha5))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
-                    Text = true;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
