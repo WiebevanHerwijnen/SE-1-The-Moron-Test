@@ -8,10 +8,14 @@ public class SpriteChange : MonoBehaviour {
     public Sprite GreenButton;
     public Sprite PurpleButton;
     public Sprite OrangeButton;
+    public Sprite GoodJob;
+    public Sprite Fail;
     private bool GBool;
     private bool RBool;
+    private bool B;
     public int CountMouse1 = 0;
     public int CountMouse0 = 0;
+    public int OBCount;
 	// Use this for initialization
 	void Start () {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
@@ -60,11 +64,159 @@ public class SpriteChange : MonoBehaviour {
                 CountMouse0 = 9000;
                 gameObject.GetComponent<SpriteRenderer>().sprite = OrangeButton;
                 CountMouse1 = 0;
+                OBCount++;
             } 
         }
         if (CountMouse1 == 11)
         {
             CountMouse1 = 0;
+        }
+        if (B == true)
+        {
+            if (OBCount == 1)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+
+            }
+            if (OBCount == 2)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+
+            }
+            if (OBCount == 3)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+            }
+            if (OBCount == 4)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+
+            }
+            if (OBCount == 5)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                    B = false;
+                }
+            }
+            if (OBCount == 6)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = Fail;
+                CountMouse1 = -1;
+            }
+
         }
     }
 
