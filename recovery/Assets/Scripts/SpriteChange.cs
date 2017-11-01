@@ -33,7 +33,7 @@ public class SpriteChange : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse1)) { 
         
          gameObject.GetComponent<SpriteRenderer>().sprite = RedButton;
-            
+            B = false;  
             
         }
 
@@ -45,6 +45,17 @@ public class SpriteChange : MonoBehaviour {
                 gameObject.GetComponent<SpriteRenderer>().sprite = GreenButton;
                 CountMouse1++;
             }
+        }
+        if (CountMouse1 == 1)
+        {
+            B = false;
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+
+                gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
+                CountMouse1++;
+            }
+
         }
         
 
@@ -73,9 +84,11 @@ public class SpriteChange : MonoBehaviour {
                 B = true;
             } 
         }
+        
         if (CountMouse1 == 11)
         {
             CountMouse1 = 0;
+            
         }
         if (B == true)
         {
@@ -85,7 +98,7 @@ public class SpriteChange : MonoBehaviour {
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
                 }
-                if (Input.GetKeyDown(KeyCode.Alpha2))
+                if (Input.GetKeyDown(KeyCode.Alpha2)) 
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
                     B = false;
@@ -106,10 +119,11 @@ public class SpriteChange : MonoBehaviour {
                     B = false;
                 }
 
+
             }
             if (OBCount == 2)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha2))
+                if (Input.GetKeyDown(KeyCode.Alpha2 ))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
                 }
