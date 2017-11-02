@@ -12,6 +12,11 @@ public class SM_Menu : MonoBehaviour {
 
     public void MenuContinueMoronTest()
     {
+        SceneManager.LoadScene("Main");
+    }
 
+    public void ResetMoronTest()
+    {
+        SceneManager.LoadScene("Opening");
     }
 }
