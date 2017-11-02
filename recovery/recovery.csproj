@@ -70,9 +70,6 @@
     <Reference Include="UnityEngine.Timeline">
       <HintPath>Library\UnityAssemblies\UnityEngine.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
@@ -80,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ResetMoronTest.cs" />
     <Compile Include="Assets\Scripts\SM_Button_FM.cs" />
+    <Compile Include="Assets\Scripts\SM_Menu.cs" />
     <Compile Include="Assets\Scripts\SM_OS_S1.cs" />
     <Compile Include="Assets\Scripts\SpriteChange.cs" />
   </ItemGroup>
