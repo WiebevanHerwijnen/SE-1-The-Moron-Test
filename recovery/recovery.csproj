@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerBall.cs" />
     <Compile Include="Assets\Scripts\ResetMoronTest.cs" />
     <Compile Include="Assets\Scripts\SM_Button_FM.cs" />
     <Compile Include="Assets\Scripts\SM_Menu.cs" />
