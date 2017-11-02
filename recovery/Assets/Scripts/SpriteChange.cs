@@ -10,7 +10,7 @@ public class SpriteChange : MonoBehaviour {
     public Sprite OrangeButton;
     public Sprite GoodJob;
     public Sprite Fail;
-    private bool GBool;
+    public bool GBool;
     private bool RBool;
     public bool B;
     public int CountMouse1 = 0;
@@ -53,13 +53,35 @@ public class SpriteChange : MonoBehaviour {
             {
 
                 gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
-                CountMouse1++;
+                
             }
 
         }
+        if (CountMouse1 == 6)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                CountMouse1 = 5;
+            }
+        }
         
+        if(CountMouse1 == 4)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                CountMouse1 = 3;
+            }
+            
+        }
+        if (CountMouse1 == 3)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                CountMouse1 = 4;
+            }
+        }
 
-        if (CountMouse1 == 2)
+        if (CountMouse1 == 8)
         {
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
@@ -70,7 +92,7 @@ public class SpriteChange : MonoBehaviour {
         
         }
 
-        if (CountMouse1 == 10)
+        if (CountMouse1 == 11)
         {
             
             
@@ -85,7 +107,7 @@ public class SpriteChange : MonoBehaviour {
             } 
         }
         
-        if (CountMouse1 == 11)
+        if (CountMouse1 == 12)
         {
             CountMouse1 = 0;
             
