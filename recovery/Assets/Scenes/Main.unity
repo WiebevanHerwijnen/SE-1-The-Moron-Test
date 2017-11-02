@@ -643,7 +643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Missie 1: Kleur de knop de Oranje en bevestig het aantal keer dat je de
+  m_Text: 'Missie 1: Kleur de knop Oranje en bevestig dan het aantal keer dat je de
     oranje knop hebt gezien.'
 --- !u!222 &1463878701
 CanvasRenderer:
@@ -744,6 +744,7 @@ MonoBehaviour:
   OrangeButton: {fileID: 21300000, guid: 6fe6116ed563f394c915752e98c0ac1a, type: 3}
   GoodJob: {fileID: 21300000, guid: 7d96f10bfd15f8e4e9293d4e8a7d7640, type: 3}
   Fail: {fileID: 21300000, guid: db4a2d0a1a5087847b077c21a4bf03ca, type: 3}
+  GBool: 0
   B: 0
   CountMouse1: 0
   CountMouse0: 0
