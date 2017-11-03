@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpriteChange : MonoBehaviour {
     public Sprite BlueButton;
@@ -11,7 +12,7 @@ public class SpriteChange : MonoBehaviour {
     public Sprite GoodJob;
     public Sprite Fail;
     public bool GBool;
-    private bool RBool;
+    public bool RBool;
     public bool Nextmissionbool;
     public bool B;
     public int CountMouse1 = 0;
@@ -30,7 +31,12 @@ public class SpriteChange : MonoBehaviour {
         }
     public void LoadMission2()
     {
-        
+      if(this.gameObject.GetComponent<SpriteRenderer>().sprite == GoodJob)
+        {
+            Debug.Log("Good Job");
+            SceneManager.LoadScene("Einde");
+        }
+            
     }
 
     // Update is called once per frame

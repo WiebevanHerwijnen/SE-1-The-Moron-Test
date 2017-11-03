@@ -219,12 +219,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerBall.cs" />
-    <Compile Include="Assets\Scripts\ResetMoronTest.cs" />
-    <Compile Include="Assets\Scripts\SM_Button_FM.cs" />
-    <Compile Include="Assets\Scripts\SM_Menu.cs" />
-    <Compile Include="Assets\Scripts\SM_OS_S1.cs" />
-    <Compile Include="Assets\Scripts\SpriteChange.cs" />
+    <Compile Include="Assets\Scripts\Sc_main\SpriteChange.cs" />
+    <Compile Include="Assets\Scripts\Sc_Playerball\PlayerBall.cs" />
+    <Compile Include="Assets\Scripts\SM\ResetMoronTest.cs" />
+    <Compile Include="Assets\Scripts\SM\SM_Button_FM.cs" />
+    <Compile Include="Assets\Scripts\SM\SM_Menu.cs" />
+    <Compile Include="Assets\Scripts\SM\SM_OS_S1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
