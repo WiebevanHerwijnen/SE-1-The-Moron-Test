@@ -12,6 +12,7 @@ public class SpriteChange : MonoBehaviour {
     public Sprite Fail;
     public bool GBool;
     private bool RBool;
+    public bool Nextmissionbool;
     public bool B;
     public int CountMouse1 = 0;
     public int CountMouse0 = 0;
@@ -22,21 +23,30 @@ public class SpriteChange : MonoBehaviour {
 	void Start () {
         this.gameObject.GetComponent<SpriteRenderer>().sprite = BlueButton;
         GBool = true;
+        RBool = true;
         B = false;
+        Nextmissionbool = false;
         
         }
+    public void LoadMission2()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Mouse1)) { 
-        
-         gameObject.GetComponent<SpriteRenderer>().sprite = RedButton;
-            B = false;  
-            
-        }
+        if(RBool == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
 
+                gameObject.GetComponent<SpriteRenderer>().sprite = RedButton;
+                B = false;
+
+            }
+        }
+       
         if (GBool == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -119,6 +129,10 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                    Nextmissionbool = true;
+                    CountMouse1 = -1;
+                    RBool = false;
+                    GBool = false;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2)) 
                 {
@@ -148,6 +162,10 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha2 ))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                    Nextmissionbool = true;
+                    CountMouse1 = -1;
+                    RBool = false;
+                    GBool = false;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -176,6 +194,10 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                    Nextmissionbool = true;
+                    CountMouse1 = -1;
+                    RBool = true;
+                    GBool = false;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -203,6 +225,10 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha4))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                    Nextmissionbool = true;
+                    CountMouse1 = -1;
+                    RBool = false;
+                    GBool = false;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -231,6 +257,10 @@ public class SpriteChange : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Alpha5))
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = GoodJob;
+                    Nextmissionbool = true;
+                    CountMouse1 = -1;
+                    RBool = false;
+                    GBool = false;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -257,6 +287,9 @@ public class SpriteChange : MonoBehaviour {
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = Fail;
                 CountMouse1 = -1;
+                RBool = false;
+                Nextmissionbool = true;
+                GBool = false;
             }
 
         }
